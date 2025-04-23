@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interSans.variable} antialiased scroll-smooth h-dvh`}
+        className={`${interSans.variable} antialiased scroll-smooth lg:h-dvh h-full`}
       >
         <img src={"/assets/loch-one-bg.png"} alt="bg" className="w-full h-full fixed -z-1" />
         {children}

@@ -36,7 +36,7 @@ const SignUpArea: FC = () => {
   };
   
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center">
+    <div className="w-full h-full flex flex-col 2xl:justify-start items-center justify-center 2xl:pt-[192px] max-lg:py-[48px] max-sm:py-[32px]">
       <div className="max-w-[365px]">
         <p className="text-[#B0B1B3] text-[39px] font-medium leading-[120%] mb-8">
           Sign up for

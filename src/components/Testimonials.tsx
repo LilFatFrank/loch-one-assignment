@@ -99,10 +99,10 @@ const Testimonials: FC = () => {
   };
 
   return (
-    <div className="overflow-hidden" onMouseLeave={handleDragEnd}>
+    <div className="w-full overflow-hidden" onMouseLeave={handleDragEnd}>
       <div
         ref={carouselRef}
-        className="flex gap-5 transition-transform duration-300 ease-out"
+        className="flex gap-3 sm:gap-5 transition-transform duration-300 ease-out select-none"
         onMouseDown={handleDragStart}
         onMouseMove={handleDragMove}
         onMouseUp={handleDragEnd}
@@ -113,11 +113,9 @@ const Testimonials: FC = () => {
         {testimonials.map((testimonial, index) => (
           <TestimonialCard
             key={index}
-            name={testimonial.name}
-            title={testimonial.title}
-            quote={testimonial.quote}
+            {...testimonial}
             className={
-              testimonial.name.toLowerCase().includes("shiv") ? "w-[531px]" : ""
+              testimonial.name.toLowerCase().includes("shiv") ? "w-[300px] sm:w-[353px] md:w-[531px]" : ""
             }
           />
         ))}
