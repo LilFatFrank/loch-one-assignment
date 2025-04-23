@@ -1,103 +1,99 @@
-import Image from "next/image";
+"use client";
+
+import NotificationBarCard from "@/components/NotificationBarCard";
+import NotificationClockCard from "@/components/NotificationClockCard";
+import NotificationEmailCard from "@/components/NotificationEmailCard";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex items-stretch h-full w-full">
+      <div className="basis-[56%] h-full pt-[84px] pl-[60px] pb-[60px] overflow-x-hidden">
+        <div className="flex items-start gap-[11px] mb-[72px]">
+          <div className="space-y-4 w-[322px] flex-shrink-0">
+            <img src={"/assets/bell-icon.svg"} alt="bell" className="w-8 h-8" />
+            <p
+              className="font-medium text-[31px] leading-[120%] text-border-shadow"
+              data-text="Get notified when a highly correlated whale makes a move"
+            >
+              Get notified when a highly correlated whale makes a move
+            </p>
+            <p className="font-medium text-[16px] leading-[120%] opacity-70">
+              Find out when a certain whale moves more than any preset amount
+              on-chain or when a dormant whale you care about becomes active.
+            </p>
+          </div>
+          <div className="infinite-scroll-container">
+            <div className="infinite-scroll-content items-stretch">
+              <NotificationEmailCard />
+              <NotificationBarCard />
+              <NotificationClockCard />
+              <NotificationEmailCard />
+              <NotificationBarCard />
+              <NotificationClockCard />
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="pr-[60px] mb-[40px]">
+          <div className="flex items-start justify-between gap-[38px]">
+            <img
+              src={"/assets/product-ss-image.png"}
+              alt="product-ss"
+              className="w-[335px]"
+            />
+            <div className="flex flex-col gap-4 items-end w-[305px] text-end">
+              <img
+                src={"/assets/loch-eye-icon.svg"}
+                alt="eye"
+                className="w-8 h-8"
+              />
+              <p className="text-[31px] leading-[120%] font-medium">
+                Watch what the whales are doing
+              </p>
+              <p className="font-medium text-[16px] leading-[120%] opacity-70">
+                All whales are not equal. Know exactly what the whales impacting
+                YOUR portfolio are doing.
+              </p>
+            </div>
+          </div>
+          <div className="mt-[22px]">
+            <div className="flex justify-end pb-[20px] border-b-[1px] border-b-[#E5E5E6]/50 w-full">
+              <p className="font-medium text-[25px] leading-[120%]">
+                Testimonials
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-end gap-[40px]">
+          <img
+            src={"/assets/testimonials-vector-icon.svg"}
+            alt="vector"
+            className="w-15 h-15"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <Testimonials />
+        </div>
+      </div>
+      <div className="basis-[44%] w-full h-full bg-white">
+        <div className="w-full h-full flex flex-col items-center justify-center">
+          <div className="max-w-[365px]">
+            <p className="text-[#B0B1B3] text-[39px] font-medium leading-[120%] mb-8">
+              Sign up for
+              <br />
+              exclusive access.
+            </p>
+            <input
+              className="bg-[#fff] mb-6 border border-[#E5E5E6] rounded-[8px] py-5 px-6 text-[16px] w-full placeholder:text-[#CACBCC] text-[#19191a] font-medium leading-[120%]"
+              placeholder="Your email address"
+            />
+            <button className="bg-[#000] cursor-pointer mb-6 border border-[#E5E5E6] rounded-[8px] py-5 text-center text-[16px] w-full placeholder:text-[#CACBCC] text-[#fff] font-semibold leading-[120%]">
+              Get Started
+            </button>
+            <p className="py-[18px] font-semibold text-[16px] leading-[120%] text-[#19191a]">
+              You'll receive an email with an invite link to join.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
