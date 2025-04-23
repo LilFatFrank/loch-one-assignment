@@ -16,11 +16,11 @@ const NotificationBarCard: FC = () => {
       />
     </div>
     <div className="space-y-4">
-      <p className="text-[11.2px] font-medium leading-[120%] text-[#19191a]">
+      <p className="text-[10px] sm:text-[11.2px] font-medium leading-[120%] text-[#19191a]">
         Notify me when any wallets move more than
       </p>
       <div className="w-fit cursor-pointer flex items-center gap-[3px] bg-[#E5E5E6]/50 rounded-[2.8px] p-1">
-        <p className="text-[#313233] font-medium text-[9.1px] leading-[120%]">$1,000.00</p>
+        <p className="text-[#313233] font-medium text-[8px] sm:text-[9.1px] leading-[120%]">$1,000.00</p>
         <img src={"/assets/chevron-down-icon.svg"} alt="down" className="w-[5px] h-[3px]" />
       </div>
     </div>

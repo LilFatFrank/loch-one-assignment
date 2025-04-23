@@ -12,16 +12,16 @@ const NotificationEmailCard: FC = () => {
             alt="bell-dark"
             className="w-7 h-7"
           />
-          <p className="text-[#19191a] text-[14px] font-medium">
+          <p className="text-[#19191a] text-xs sm:text-[14px] font-medium">
             We'll be sending notifications to you here
           </p>
         </div>
-        <button className="text-[#19191a] font-semibold leading-[120%] text-[9.1px]">
+        <button className="text-[#19191a] font-semibold leading-[120%] text-[8px] sm:text-[9.1px]">
           Save
         </button>
       </div>
       <input
-        className="w-full border border-[#D4D4D4] rounded-[5.6px] py-[12px] px-[10px] placeholder:text-[#E5E5E6] text-[#19191a] text-[9.1px] font-medium leading-[120%] outline-none"
+        className="w-full border border-[#D4D4D4] rounded-[5.6px] py-[12px] px-[10px] placeholder:text-[#E5E5E6] text-[#19191a] text-[8px] sm:text-[9.1px] font-medium leading-[120%] outline-none"
         placeholder="hello@loch.one"
         defaultValue={"hello@loch.one"}
       />

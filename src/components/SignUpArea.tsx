@@ -38,14 +38,14 @@ const SignUpArea: FC = () => {
   return (
     <div className="w-full h-full flex flex-col 2xl:justify-start items-center justify-center 2xl:pt-[192px] max-lg:py-[48px] max-sm:py-[32px]">
       <div className="max-w-[365px]">
-        <p className="text-[#B0B1B3] text-[39px] font-medium leading-[120%] mb-8">
+        <p className="text-[#B0B1B3] text-2xl sm:text-[31px] md:text-[39px] font-medium leading-[120%] mb-6 sm:mb-8">
           Sign up for
           <br />
           exclusive access.
         </p>
         <div className="relative">
           <input
-            className={`bg-[#fff] mb-2 border ${error && isDirty ? 'border-red-500 focus:border-red-500 focus:ring-red-500/30' : 'border-[#E5E5E6] focus:border-[#000000] focus:ring-[#000000]/30'} rounded-[8px] py-5 px-6 text-[16px] w-full placeholder:text-[#CACBCC] text-[#19191a] font-medium leading-[120%] transition-all duration-200 hover:border-[#2b2b2b] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:shadow-[0px_4px_10px_rgba(0,0,0,0.1)]`}
+            className={`bg-[#fff] mb-2 border ${error && isDirty ? 'border-red-500 focus:border-red-500 focus:ring-red-500/30' : 'border-[#E5E5E6] focus:border-[#000000] focus:ring-[#000000]/30'} rounded-[8px] py-4 sm:py-5 px-4 sm:px-6 text-sm sm:text-[16px] w-full placeholder:text-[#CACBCC] text-[#19191a] font-medium leading-[120%] transition-all duration-200 hover:border-[#2b2b2b] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:shadow-[0px_4px_10px_rgba(0,0,0,0.1)]`}
             placeholder="Your email address"
             value={email}
             onChange={(e) => {
@@ -64,11 +64,11 @@ const SignUpArea: FC = () => {
         </div>
         <button
           onClick={handleSubmit}
-          className="bg-[#000] outline-none cursor-pointer mt-8 mb-6 border border-[#E5E5E6] rounded-[8px] py-5 text-center text-[16px] w-full placeholder:text-[#CACBCC] text-[#fff] font-semibold leading-[120%] transition-all duration-200 hover:bg-[#2b2b2b]"
+          className="bg-[#000] outline-none cursor-pointer mt-8 mb-4 sm:mb-6 border border-[#E5E5E6] rounded-[8px] py-4 sm:py-5 text-center text-sm sm:text-[16px] w-full placeholder:text-[#CACBCC] text-[#fff] font-semibold leading-[120%] transition-all duration-200 hover:bg-[#2b2b2b]"
         >
           Get Started
         </button>
-        <p className="py-[18px] font-semibold text-[16px] leading-[120%] text-[#19191a]">
+        <p className="py-[14px] sm:py-[18px] font-semibold text-sm sm:text-[16px] leading-[120%] text-[#19191a]">
           You'll receive an email with an invite link to join.
         </p>
       </div>

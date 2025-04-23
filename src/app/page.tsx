@@ -15,7 +15,7 @@ export default function Home() {
             <div className="space-y-4 xl:w-[322px] w-full flex-shrink-0">
               <img src={"/assets/bell-icon.svg"} alt="bell" className="w-8 h-8" />
               <p
-                className="font-medium text-[31px] leading-[120%] text-border-shadow"
+                className="font-medium text-2xl md:text-[31px] leading-[120%] text-border-shadow"
                 data-text="Get notified when a highly correlated whale makes a move"
               >
                 Get notified when a highly correlated whale makes a move
@@ -23,7 +23,7 @@ export default function Home() {
               <div className="xl:hidden md:w-[50%] block">
                 <NotificationScroll />
               </div>
-              <p className="font-medium text-[16px] leading-[120%] opacity-70 md:w-[70%]">
+              <p className="font-medium text-sm md:text-[16px] leading-[120%] opacity-70 md:w-[70%]">
                 Find out when a certain whale moves more than any preset amount
                 on-chain or when a dormant whale you care about becomes active.
               </p>
@@ -45,7 +45,7 @@ export default function Home() {
                   alt="eye"
                   className="w-8 h-8"
                 />
-                <p className="text-[31px] leading-[120%] font-medium">
+                <p className="text-2xl md:text-[31px] leading-[120%] font-medium">
                   Watch what the whales are doing
                 </p>
                 <img
@@ -53,7 +53,7 @@ export default function Home() {
                   alt="product-ss"
                   className="xl:hidden block md:w-[50%] w-full shadow-[0px_14px_64px_-4px_rgba(24,39,75,0.12),0px_8px_22px_-6px_rgba(24,39,75,0.12)]"
                 />
-                <p className="font-medium text-[16px] leading-[120%] opacity-70 md:w-[70%]">
+                <p className="font-medium text-sm md:text-[16px] leading-[120%] opacity-70 md:w-[70%]">
                   All whales are not equal. Know exactly what the whales impacting
                   YOUR portfolio are doing.
                 </p>
@@ -61,7 +61,7 @@ export default function Home() {
             </div>
             <div className="lg:mt-[22px] mt-[40px]">
               <div className="flex lg:justify-end justify-start pb-[20px] border-b-[1px] border-b-[#E5E5E6]/50 w-full">
-                <p className="font-medium text-[20px] sm:text-[25px] leading-[120%]">
+                <p className="font-medium text-xl md:text-[25px] leading-[120%]">
                   Testimonials
                 </p>
               </div>
