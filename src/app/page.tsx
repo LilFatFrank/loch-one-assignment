@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex justify-center w-full h-full">
       <div className="flex lg:flex-row flex-col items-stretch h-full w-full max-w-[1536px] mx-auto">
-        <div className="xl:basis-[56%] lg:basis-[50%] h-full lg:pt-[84px] lg:pl-[60px] lg:pb-[60px] pt-[36px] px-[16px] pb-[24px] overflow-x-hidden">
+        <div className="xl:basis-[56%] lg:basis-[50%] h-full lg:pt-[84px] lg:pl-[60px] lg:pb-[60px] pt-[36px] max-lg:px-[16px] pb-[24px] overflow-x-hidden">
           <div className="flex items-start gap-[11px] mb-[72px]">
             <div className="space-y-4 xl:w-[322px] w-full flex-shrink-0">
               <img src={"/assets/bell-icon.svg"} alt="bell" className="w-8 h-8" />
@@ -28,9 +28,7 @@ export default function Home() {
                 on-chain or when a dormant whale you care about becomes active.
               </p>
             </div>
-            <div className="xl:block hidden">
-              <NotificationScroll />
-            </div>
+              <NotificationScroll className="xl:block hidden" />
           </div>
           <div className="xl:pr-[60px] lg:pr-[24px] mb-[40px]">
             <div className="flex items-start justify-between gap-[38px]">
@@ -73,7 +71,7 @@ export default function Home() {
               alt="vector"
               className="w-12 h-12 sm:w-15 sm:h-15"
             />
-            <div className="w-full overflow-x-auto pb-4 -mb-4">
+            <div className="w-full overflow-x-auto max-xl:pb-4 -mb-4">
               <Testimonials />
             </div>
           </div>
@@ -86,8 +84,8 @@ export default function Home() {
   );
 }
 
-const NotificationScroll = () => (
-  <div className="infinite-scroll-container">
+const NotificationScroll = ({ className }: {className?: string}) => (
+  <div className={`infinite-scroll-container ${className || ""}`}>
     <div className="infinite-scroll-content items-stretch relative">
       <NotificationEmailCard />
       <NotificationBarCard />
