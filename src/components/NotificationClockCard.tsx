@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const NotificationClockCard: FC = () => {
   return (
-    <div className="flex-shrink-0 p-[14px] rounded-[8.4px] border-none w-[189.7px] bg-white flex flex-col items-start justify-between">
+    <div className="flex-shrink-0 p-[14px] rounded-[8.4px] border-none w-[189.7px] bg-white flex flex-col items-start justify-between shadow-[0px_0.7px_0.7px_0px_rgba(0,0,0,0.04),0px_2.8px_7px_0px_rgba(0,0,0,0.04)]">
       <div className="flex w-full items-start justify-between">
         <img
           src={"/assets/notif-clock-icon.svg"}

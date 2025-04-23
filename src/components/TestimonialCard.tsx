@@ -16,7 +16,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex-shrink-0 bg-white rounded-[20px] border-none p-5 space-y-5 h-[136px] w-[353px] ${className || ''}`}
+      className={`flex-shrink-0 bg-white rounded-[20px] border-none p-5 space-y-5 h-[136px] w-[353px] shadow-[0px_1px_1px_0px_rgba(0,0,0,0.04),0px_4px_10px_0px_rgba(0,0,0,0.04)] ${className || ''}`}
     >
       <p className="flex items-center gap-[3px]">
         <span className="text-[#19191a] text-[16px] font-semibold leading-[120%]">

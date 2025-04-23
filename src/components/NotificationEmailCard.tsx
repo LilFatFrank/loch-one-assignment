@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const NotificationEmailCard: FC = () => {
   return (
-    <div className="flex-shrink-0 relative p-[14px] rounded-[8.4px] border-none w-[189.7px] bg-white">
+    <div className="flex-shrink-0 relative p-[14px] rounded-[8.4px] border-none w-[189.7px] bg-white shadow-[0px_0.7px_0.7px_0px_rgba(0,0,0,0.04),0px_2.8px_7px_0px_rgba(0,0,0,0.04)]">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#165DFF]/81 opacity-20 rounded-[8.4px]"></div>
       <div className="relative flex w-full items-start justify-between mb-4">
         <div className="space-y-[14px]">

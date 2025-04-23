@@ -3,6 +3,7 @@
 import NotificationBarCard from "@/components/NotificationBarCard";
 import NotificationClockCard from "@/components/NotificationClockCard";
 import NotificationEmailCard from "@/components/NotificationEmailCard";
+import SignUpArea from "@/components/SignUpArea";
 import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
@@ -39,7 +40,7 @@ export default function Home() {
             <img
               src={"/assets/product-ss-image.png"}
               alt="product-ss"
-              className="w-[335px]"
+              className="w-[335px] shadow-[0px_14px_64px_-4px_rgba(24,39,75,0.12),0px_8px_22px_-6px_rgba(24,39,75,0.12)]"
             />
             <div className="flex flex-col gap-4 items-end w-[305px] text-end">
               <img
@@ -74,25 +75,7 @@ export default function Home() {
         </div>
       </div>
       <div className="basis-[44%] w-full h-full bg-white">
-        <div className="w-full h-full flex flex-col items-center justify-center">
-          <div className="max-w-[365px]">
-            <p className="text-[#B0B1B3] text-[39px] font-medium leading-[120%] mb-8">
-              Sign up for
-              <br />
-              exclusive access.
-            </p>
-            <input
-              className="bg-[#fff] mb-6 border border-[#E5E5E6] rounded-[8px] py-5 px-6 text-[16px] w-full placeholder:text-[#CACBCC] text-[#19191a] font-medium leading-[120%]"
-              placeholder="Your email address"
-            />
-            <button className="bg-[#000] cursor-pointer mb-6 border border-[#E5E5E6] rounded-[8px] py-5 text-center text-[16px] w-full placeholder:text-[#CACBCC] text-[#fff] font-semibold leading-[120%]">
-              Get Started
-            </button>
-            <p className="py-[18px] font-semibold text-[16px] leading-[120%] text-[#19191a]">
-              You'll receive an email with an invite link to join.
-            </p>
-          </div>
-        </div>
+        <SignUpArea />
       </div>
     </div>
   );
